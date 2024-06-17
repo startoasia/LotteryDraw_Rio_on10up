@@ -1,0 +1,343 @@
+/* popShow */
+.popBG {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(119, 0, 0, 0.8); */
+    /* background-color: rgb(0,0,0,0.8); */
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.popBG .container {
+    position: relative;
+    height: 100vh;
+}
+
+.popBG .container::before {
+    content: "";
+    /* background-color: rgb(119, 0, 0, 0.8); */
+    background-image: url(../images/straws/pop-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
+    /* margin:  0 -0.75% 0 -0.75%; */
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.popImg {
+    /* margin: 0 auto; */
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popBG--show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.x-mark {
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    text-align: center;
+    font-size: 2.5rem;
+    right: 0%;
+    top: 0%;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.x-mark:hover {
+
+    color: #fff;
+    background-color: #000;
+}
+
+.popBtn {
+    position: absolute;
+    width: 49.8%;
+    top: 65%;
+    left: 25.1%;
+    z-index: 1;
+    -webkit-mask: url("../images/straws/pop-btn.png") no-repeat center center;
+    mask: url("../images/straws/pop-btn.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transition: all .3s;
+}
+
+.popBtn:hover {
+    opacity: 0.9s;
+}
+
+@media (max-width:768px) {
+    .popBG {
+        background-color: rgb(0, 0, 0, 0);
+    }
+
+    .popBtn {
+        top: 63%;
+    }
+}
+
+/* ------------------------------------------------- */
+.shake_bottle {
+    width: 54.3%;
+    bottom: 15%;
+    left: 22.85%;
+    z-index: 2;
+}
+
+
+.shake_btn {
+    cursor: pointer;
+    width: 25.1%;
+    bottom: 24%;
+    left: 37.45%;
+    z-index: 2;
+    transition: all 0.3s;
+}
+
+.shake_hand {
+    width: 11.9%;
+    bottom: 22%;
+    left: 50.45%;
+    z-index: 2;
+    animation: scale 1s infinite ease-in-out;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.shake_btn--close {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.shake_anBottle {
+    animation: shake-bottle 2s ease-in-out;
+    transform-origin: center center;
+}
+
+.shake_an_A {
+    animation: shake-crazya 2s linear;
+    transform-origin: bottom center;
+}
+
+.shake_an_B {
+    animation: shake-crazyb 2s linear;
+    transform-origin: bottom center;
+}
+
+.shake_cardAnswer {
+    width: 14.3%;
+    top: 40.5%;
+    left: 43.3%;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+.shake_cardAnswer--show {
+    opacity: 1;
+    transform: translateY(-30%);
+}
+
+/* 卡片定位 */
+
+.shake_card1 {
+    width: 23.9%;
+    top: 41%;
+    left: 33.5%;
+    z-index: 1;
+}
+
+.shake_card2 {
+    width: 32.3%;
+    top: 43%;
+    left: 27%;
+}
+
+.shake_card3 {
+    width: 14.3%;
+    top: 40.5%;
+    left: 43.3%;
+    z-index: 2;
+}
+
+.shake_card4 {
+    width: 19.2%;
+    top: 41%;
+    left: 46%;
+    z-index: 1;
+}
+
+.shake_card5 {
+    width: 29.8%;
+    top: 42%;
+    left: 42%;
+}
+
+
+
+/* 動畫 */
+@keyframes shake-crazya {
+    10% {
+        transform: translate(-3px, 5px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-2px, -1px) rotate(2deg);
+    }
+
+    30% {
+        transform: translate(4px, 3px) rotate(-1.5deg);
+    }
+
+    40% {
+        transform: translate(3px, -5px) rotate(-2deg);
+    }
+
+    50% {
+        transform: translate(-4px, 5px) rotate(1deg);
+    }
+
+    60% {
+        transform: translate(5px, 0px) rotate(2deg);
+    }
+
+    70% {
+        transform: translate(-4px, 2px) rotate(-2deg);
+    }
+
+    80% {
+        transform: translate(5px, -4px) rotate(-3deg);
+    }
+
+    90% {
+        transform: translate(-6px, 1px) rotate(-2deg);
+    }
+
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+@keyframes shake-crazyb {
+    10% {
+        transform: translate(3px, -5px) rotate(1deg);
+    }
+
+    20% {
+        transform: translate(2px, 1px) rotate(-2deg);
+    }
+
+    30% {
+        transform: translate(-4px, -3px) rotate(1.5deg);
+    }
+
+    40% {
+        transform: translate(-3px, 5px) rotate(2deg);
+    }
+
+    50% {
+        transform: translate(4px, -5px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-5px, 0px) rotate(-2deg);
+    }
+
+    70% {
+        transform: translate(4px, -2px) rotate(2deg);
+    }
+
+    80% {
+        transform: translate(-5px, 4px) rotate(3deg);
+    }
+
+    90% {
+        transform: translate(6px, -1px) rotate(2deg);
+    }
+
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+@keyframes shake-bottle {
+    10% {
+        transform: translate(-3px, 5px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-2px, -1px) rotate(2deg);
+    }
+
+    30% {
+        transform: translate(5px, 4px) rotate(-3deg);
+    }
+
+    40% {
+        transform: translate(7px, -8px) rotate(-3deg);
+    }
+
+    50% {
+        transform: translate(-6px, 8px) rotate(1deg);
+    }
+
+    60% {
+        transform: translate(5px, 0px) rotate(2deg);
+    }
+
+    70% {
+        transform: translate(-6px, 4px) rotate(-2deg);
+    }
+
+    80% {
+        transform: translate(5px, -8px) rotate(-2deg);
+    }
+
+    90% {
+        transform: translate(-5px, 1px) rotate(2deg);
+    }
+
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+.scaleShow {
+    animation: scaleShow 1.5s linear;
+    opacity: 0;
+}
+
+@keyframes scaleShow {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

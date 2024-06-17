@@ -1,0 +1,239 @@
+.offerBtn {
+    transition: all .3s;
+}
+
+.offerBtn:hover {
+    opacity: 0.9;
+}
+
+
+/* offer-Middle 01 */
+.thing03-1 {
+    width: 100%;
+    right: 0%;
+    bottom: 25%;
+    -webkit-mask: url("../images/offerMiddle/thing02-1.png") no-repeat center center;
+    mask: url("../images/offerMiddle/thing02-1.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.thing03-2 {
+    width: 14.4%;
+    left: 0%;
+    bottom: 38.5%;
+}
+
+.thing03-3 {
+    width: 42%;
+    right: 0%;
+    bottom: 15%;
+}
+
+.thing03-4 {
+    width: 39.6%;
+    left: 0%;
+    bottom: 11.6%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.thing03-5 {
+    width: 82.3%;
+    right: 6%;
+    bottom: 4%;
+    -webkit-mask: url("../images/offerMiddle/thing02btn.png") no-repeat center center;
+    mask: url("../images/offerMiddle/thing02btn.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+/* offer-Middle 02 */
+.thing06-1 {
+    width: 100%;
+    right: 0%;
+    bottom: 28.5%;
+    -webkit-mask: url("../images/offerMiddle/thing02-1.png") no-repeat center center;
+    mask: url("../images/offerMiddle/thing02-1.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.thing06-2 {
+    width: 14.4%;
+    left: 0%;
+    bottom: 41.5%;
+
+}
+
+.thing06-3 {
+    width: 42%;
+    right: 0%;
+    bottom: 18.6%;
+}
+
+.thing06-4 {
+    width: 39.6%;
+    left: 0%;
+    bottom: 14.6%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.thing06-5 {
+    width: 82.3%;
+    right: 6%;
+    bottom: 8%;
+    -webkit-mask: url("../images/offerMiddle/thing02btn.png") no-repeat center center;
+    mask: url("../images/offerMiddle/thing02btn.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+/* offer-Middle 03 */
+.thing09-1 {
+    width: 72%;
+    right: 0%;
+    bottom: 33%;
+    animation: scaleB 2s infinite ease-in-out;
+}
+
+.thing09-2 {
+    width: 40.3%;
+    left: 0%;
+    bottom: 15.5%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.thing09-3 {
+    width: 35.6%;
+    right: 0%;
+    bottom: 24.6%;
+}
+
+.thing09-4 {
+    width: 82.3%;
+    right: 6%;
+    bottom: 7.25%;
+    -webkit-mask: url("../images/offerMiddle/thing03btn.png") no-repeat center center;
+    mask: url("../images/offerMiddle/thing03btn.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+/* offer01 */
+.thing21-1 {
+    width: 100%;
+    right: 0%;
+    bottom: 31.5%;
+    -webkit-mask: url("../images/offer/offer01-1.png") no-repeat center center;
+    mask: url("../images/offer/offer01-1.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.thing21-2 {
+    width: 41.6%;
+    right: 17%;
+    bottom: 33.35%;
+}
+
+.thing21-3 {
+    width: 15.1%;
+    left: 0%;
+    bottom: 45%;
+}
+
+.thing21-4 {
+    width: 40.3%;
+    left: 0%;
+    bottom: 15%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.offer01 {
+    width: 82.3%;
+    right: 6%;
+    bottom: 8.5%;
+    -webkit-mask: url("../images/offer/offer01Btn.png") no-repeat center center;
+    mask: url("../images/offer/offer01Btn.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+/* offer02 */
+.thing22-1 {
+    width: 51.4%;
+    right: 0%;
+    bottom: 37%;
+    animation: scale 2s infinite ease-in-out;
+}
+
+.thing22-2 {
+    width: 32%;
+    right: 23.5%;
+    bottom: 37.8%;
+}
+
+.thing22-3 {
+    width: 40.3%;
+    left: 0%;
+    bottom: 16%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.offer02 {
+    width: 82.3%;
+    right: 6%;
+    bottom: 9%;
+    -webkit-mask: url("../images/offer/offer02Btn.png") no-repeat center center;
+    mask: url("../images/offer/offer02Btn.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+/* offer03 */
+.thing23-1 {
+    width: 51.4%;
+    right: 0%;
+    bottom: 37.5%;
+    animation: scale 2s infinite ease-in-out;
+}
+
+.thing23-2 {
+    width: 32%;
+    right: 23.5%;
+    bottom: 39%;
+}
+
+.thing23-3 {
+    width: 40.3%;
+    left: 0%;
+    bottom: 18%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.offer03 {
+    width: 82.3%;
+    right: 6%;
+    bottom: 10%;
+    -webkit-mask: url("../images/offer/offer03Btn.png") no-repeat center center;
+    mask: url("../images/offer/offer03Btn.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+/* offer04 */
+.offer04 {
+    width: 45%;
+    right: 3%;
+    bottom: 8%;
+    -webkit-mask: url("../images/offer/offer04Btn.png") no-repeat center center;
+    mask: url("../images/offer/offer04Btn.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain
+}

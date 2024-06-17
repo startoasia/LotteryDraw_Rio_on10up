@@ -1,0 +1,206 @@
+.light {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+.light:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -150%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+    animation: light 3s infinite ease-in-out;
+}
+
+@keyframes light {
+    0% {
+        left: -150%;
+    }
+
+    70% {
+        left: 150%;
+    }
+
+    100% {
+        left: 150%;
+    }
+}
+
+/* 跑馬燈 */
+
+.marquee {
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+.thing14-marqueebox {
+    width: 218%;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 0%;
+    display: flex;
+    height: 63%;
+    overflow: hidden;
+    /* padding: 5% 0; */
+    box-sizing: border-box;
+}
+
+.thing14-marqueebox img {
+    height: 100%;
+    width: auto;
+}
+
+/* 打勾 */
+
+#tick1.tickbox {
+    width: 46px;
+    height: 46px;
+    /* border: 2px solid #22ff00; */
+    position: absolute;
+    top: 82%;
+    left: 26%;
+
+}
+
+#tick2.tickbox {
+    width: 46px;
+    height: 46px;
+    /* border: 2px solid #22ff00; */
+    position: absolute;
+    top: 89%;
+    left: 26%;
+}
+
+#tick3.tickbox {
+    width: 46px;
+    height: 46px;
+    /* border: 2px solid #22ff00; */
+    position: absolute;
+    top: 92.8%;
+    left: 26%;
+}
+
+.tickL {
+    position: absolute;
+    top: 39%;
+    left: 9%;
+    width: 60%;
+    max-width: 0px;
+    height: 14%;
+    background: #ff1f1f;
+    border-radius: 10px;
+    transform: rotate(60deg);
+    transform-origin: left center;
+}
+
+.tickR {
+    position: absolute;
+    top: 91%;
+    left: 35%;
+    width: 132%;
+    max-width: 0px;
+    height: 14%;
+    background: #ff1f1f;
+    border-radius: 10px;
+    transform: rotate(-50deg);
+    transform-origin: left center;
+}
+
+.tickbox.check .tickL {
+    transition: all .1s;
+    max-width: 60%;
+    transition-timing-function: linear;
+}
+
+.tickbox.check .tickR {
+    transition: all .1s;
+    max-width: 132%;
+    transition-timing-function: linear;
+    transition-delay: .1s;
+}
+
+#tick2 .tickbox.check .tickL,
+#tick2 .tickbox.check .tickR {
+    transition-delay: 5s;
+}
+
+@media (max-width:1000px) {
+
+    #tick1.tickbox,
+    #tick2.tickbox,
+    #tick3.tickbox {
+        width: 5vw;
+        height: 5vw;
+    }
+}
+
+@keyframes scale {
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(0.95,0.95);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+@keyframes scaleB {
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.05,1.05);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+.bounce{
+    animation: bounce 2s infinite ease-in-out;
+}
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translate3d(0, 0, 0);
+    }
+    10% {
+        transform: scale(1.05, .95) translate3d(0, 0, 0);
+    }
+    30% {
+        transform: scale(.95, 1.05) translate3d(0, -8%, 0);
+    }
+    50% {
+        transform: scale(1.02, .97) translate3d(0, 0, 0);
+    }
+    57% {
+        transform: scale(1, 1) translate3d(0, -2%, 0);
+    }
+    64% {
+        transform: scale(1, 1) translate3d(0, 0, 0);
+    }
+    100% {
+        transform: scale(1, 1) translate3d(0, 0, 0);
+    }
+}

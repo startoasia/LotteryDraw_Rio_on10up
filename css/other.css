@@ -1,0 +1,56 @@
+/* 倒數計時 */
+
+.clock-container {
+    color: #ffffff;
+    background: #FF6A80;
+    padding: 0.15em 0;
+    border-radius: 0.1em;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#timer {
+    border-radius: 1.5px;
+    font-weight: bold;
+    margin: .5 .5em;
+    padding: 0 .5em;
+    letter-spacing: 0.1em;
+    color: #f9f9f9;
+}
+
+@media (max-width:768px) {
+    .clock-container {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:549px) {
+    .clock-container {
+        font-size: 1.15rem;
+    }
+}
+
+
+/* 開闔 */
+
+.collapse__Btn {
+    cursor: pointer;
+}
+
+.collapse__Content {
+    transition: max-height .3s;
+    max-height: 0;
+    overflow: hidden;
+}
+.QA01{
+    width: 100%;
+    height: 25%;
+    left: 0%;
+    bottom: 0%;
+    
+}
+
+.swiper-3d .swiper-slide-shadow {
+    background: transparent;
+}
